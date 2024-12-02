@@ -1,0 +1,80 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Garante que o conteúdo seja centralizado verticalmente */
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #f0f4f8; /* Fundo claro e moderno */
+}
+
+h1, h2 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+#votacao, #resultados {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    padding: 30px;
+    max-width: 600px;
+    width: 100%;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.candidatos {
+    display: flex;
+    justify-content: center; /* Centraliza os itens dentro do contêiner */
+    gap: 20px;
+    margin: 20px 0;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+label:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.candidato-imagem {
+    width: 100px;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    border: 4px solid #3498db;
+    transition: border-color 0.3s ease;
+}
+
+.candidato-imagem:hover {
+    border-color: #2980b9;
+}
+
+button {
+    display: inline-block;
+    margin: 15px 10px;
+    padding: 12px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #3498db;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #2980b9;
+    transform: translateY(-3px);
+}

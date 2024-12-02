@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Votação com Imagens</title>
+    <link rel="stylesheet" href="vot.css">
+</head>
+<body>
+    <h1>Sistema de Votação</h1>
+
+    <div id="votacao">
+        <input type="text" id="nome" placeholder="Digite seu nome" required>
+        
+        <div class="candidatos">
+            <label>
+                <input type="radio" name="candidato" value="Candidato 1"> Lula
+                <img src="c:/Users/Nicolas/Documents/votação/imagens/lula.jpg" alt="Candidato 1" class="candidato-imagem"><br>
+            </label>
+            <label>
+                <input type="radio" name="candidato" value="Candidato 2"> Bolsonaro
+                <img src="c:/Users/Nicolas/Documents/votação/imagens/bolsonaro.jpg" alt="Candidato 2" class="candidato-imagem"><br>
+            </label>
+            <label>
+                <input type="radio" name="candidato" value="Candidato 3"> Brian
+                <img src="c:/Users/Nicolas/Documents/votação/imagens/brian.jpg" alt="Candidato 3" class="candidato-imagem">
+            </label>
+        </div>
+        
+        <button id="votar">Votar</button>
+    </div>
+
+    <div id="resultados">
+        <h2>Resultados</h2>
+        <p>Lula: <span id="votosCandidato1">0</span> votos</p>
+        <p>Bolsonaro: <span id="votosCandidato2">0</span> votos</p>
+        <p>Brian: <span id="votosCandidato3">0</span> votos</p>
+        <button id="zerarVotos">Zerar Votos</button>
+    </div>
+
+    <script src="vote.js"></script>
+</body>
+</html>
